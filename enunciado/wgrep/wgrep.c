@@ -13,7 +13,7 @@ int main(int argc, char const *argv[])
     char *line = malloc(sizeof(char)*size);
     line = (char *)argv[1];
 
-    getline(&line, &size, fp);
-    printf("%s", line);
+    size_t result = getline(&line, &size, fp);
+    printf("%s", result);
     return 0;
 }
