@@ -1,0 +1,2 @@
+realloc(): invalid pointer
+../run-tests.sh: línea 23: 17597 Abortado                (`core' generado) ./wgrep this tests/1.in
