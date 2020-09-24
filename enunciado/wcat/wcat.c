@@ -9,10 +9,8 @@ int main(int argc, char const *argv[])
         printf("cannot open file\n");
         exit(1);
     }
-    char* s;
-    char buffer = fgets(s, NULL,fp);
-    //int* b = argv[1];
-    //const char *a = atoi(b);
-    printf("%s", buffer);
+    char *s = malloc(sizeof(char)*10000000);
+    s = fgets(s, 100000,fp);
+    printf("%s", s);
     return 0;
 }
