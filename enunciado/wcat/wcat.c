@@ -12,7 +12,11 @@ int main(int argc, char const *argv[]){
         }
         char *s = malloc(sizeof(fp));
         s = fgets(s, sizeof(*fp), fp);
-        printf("%s", s);
+        if(s == NULL){
+            break;
+        } else {
+            printf("%s", s);
+        }
         free(s);
     }
     return 0;
